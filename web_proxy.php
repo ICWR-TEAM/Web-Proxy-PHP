@@ -64,7 +64,7 @@ class PROXY
 
         }
 
-        $resp = (!empty($_GET['url'])) ? ($url = $_GET['url']) ($this->requester($url, $requestMethod, $body)) : false;
+        $resp = (!empty($_GET['url'])) ? $this->requester($_GET['url'], $requestMethod, $body) : false;
 
         return $resp;
 
